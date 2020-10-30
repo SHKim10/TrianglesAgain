@@ -1,14 +1,29 @@
 public class Tester{
   public static void main (String[] args){
+
     Point A = new Point(0, 0);
     Point B = new Point(6, 0);
     Point C = new Point(0, -5);
     Point D = new Point(-3, 4);
+    Point E = new Point(-3, 4);
+    Point F = new Point(-3, 0);
+
     System.out.println(A.distanceTo(B));  //6.0
     System.out.println(A.distanceTo(C));  //5.0
     System.out.println(A.distanceTo(D));  //5.0
-    System.out.println(B.distanceTo(C));  //7.81025
-    System.out.println(B.distanceTo(D));  //9.848858
-    System.out.println(C.distanceTo(D));  //9.486833
+    System.out.println(B.distanceTo(C));  //7.81025...
+    System.out.println(B.distanceTo(D));  //9.848858...
+    System.out.println(C.distanceTo(D));  //9.486833...
+
+    System.out.println(A.equals(D));  //false
+    System.out.println(B.equals(C));  //false
+    System.out.println(D.equals(E));  //true
+
+    Triangle t1 = new Triangle(A, B, C);
+    Triangle t2 = new Triangle(B, C, D);
+    Triangle t3 = new Triangle(A, D, F);
+    System.out.println(t1.getPerimeter());  //18.81025...
+    System.out.println(t2.getPerimeter());  //27.145941...
+    System.out.println(t3.getPerimeter());  //12.0
   }
 }
