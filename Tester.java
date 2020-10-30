@@ -41,6 +41,13 @@ public class Tester{
     System.out.println(t3.toString());  //v1(0.0, 0.0) v2(-3.0, 4.0) v3(-3.0, 0.0)
     System.out.println(t4.toString());  //v1(0.0, 0.0) v2(6.0, 0.0) v3(3.0, Math.sqrt(27))
     System.out.println(t5.toString());  //v1(0.0, 0.0) v2(0.0, -5.0) v3(-3.0, 4.0)
+    
+    t1.setVertex(0, new Point(3, 2));
+    t2.setVertex(1, F);
+    t3.setVertex(2, D);
+    System.out.println(t1.toString());  //v1(3.0, 2.0) v2(6.0, 0.0) v3(0.0, -5.0)
+    System.out.println(t2.toString());  //v1(6.0, 0.0) v2(-3.0, 0.0) v3(-3.0, 4.0)
+    System.out.println(t3.toString());  //v1(0.0, 0.0) v2(-3.0, 4.0) v3(-3.0, 4.0)
 
   }
 }
