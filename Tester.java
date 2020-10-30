@@ -14,7 +14,6 @@ public class Tester{
     System.out.println(B.distanceTo(C));  //7.81025...
     System.out.println(B.distanceTo(D));  //9.848858...
     System.out.println(C.distanceTo(D));  //9.486833...
-
     System.out.println(A.equals(D));  //false
     System.out.println(B.equals(C));  //false
     System.out.println(D.equals(E));  //true
@@ -25,5 +24,9 @@ public class Tester{
     System.out.println(t1.getPerimeter());  //18.81025...
     System.out.println(t2.getPerimeter());  //27.145941...
     System.out.println(t3.getPerimeter());  //12.0
+    System.out.println(t1.getArea()); //15.0
+    System.out.println(t2.getArea()); //34.5
+    System.out.println(t3.getArea()); //6.0
+
   }
 }
